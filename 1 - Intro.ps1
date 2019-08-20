@@ -1,17 +1,5 @@
-# Store your vCenter username/password for this PowerShell session in variable $Cred
-$Cred = Get-Credential -UserName 'bb@cpbu.corp' -Message 'Username and password for vCenter access'
-
 # Establish a connection to your vCenter server
-Connect-VIServer -Server vcenter.contoso.test -Credential $Cred
-
-# Did you see an error about an invalid vCenter certificate?
-Get-PowerCLIConfiguration
-Set-PowerCLIConfiguration -InvalidCertificateAction Ignore
-
-# List all vCenter servers I'm currently connected to
-$global:DefaultVIServers
-# List the most recent vCenter server I connected to
-$global:DefaultVIServer
+Connect-VIServer -Server vcenter.contoso.test
 
 # List all ESXi hosts
 Get-VMHost

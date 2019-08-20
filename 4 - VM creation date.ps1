@@ -1,4 +1,5 @@
 # VM creation date in vSphere 6.7
+$kyrd | Select *
 ($kyrd).ExtensionData
 $kyrd.ExtensionData.Config
 $kyrd.ExtensionData.Config.CreateDate

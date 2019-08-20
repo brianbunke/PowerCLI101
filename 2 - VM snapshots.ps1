@@ -5,19 +5,20 @@
 Get-Command -Name get* -Module vmware*
 Get-Command *snap* -Module vmware*
 
-# First, create a "powered off" snapshot
-$kyrd | New-Snapshot -Name frozen -RunAsync
-
 # Ok, Get-Snapshot is what I want. How do I use it?
 Get-Help Get-Snapshot -Full
 Get-Help Get-Snapshot -Examples
+
+# First, create a "powered off" snapshot
+$kyrd | New-Snapshot -Name frozen -RunAsync
 
 # Bonus: All the commands that support asynchronous (long-running) tasks
 Get-Command -Module vmware* -ParameterName RunAsync
 
 # Get info about snapshots
 Get-VM -Name kr* | Get-Snapshot
-Get-VM -Name kr* | Get-Snapshot | Format-List
+Get-VM -Name kr* | Get-Snapshot | Select-Object -Property *
+Get-VM -Name kr* | Get-Snapshot | Select-Object VM, Name, PowerState, Created
 
 # How do I get "10 seconds ago" in PowerShell?
 (Get-Date).AddSeconds(-10)
