@@ -1,8 +1,16 @@
 # Deleting old VM snapshots
 # In this example, any snapshot that has existed for at least 10 seconds is "old"
 
+# First, how can I discover the commands PowerCLI provides for me?
+Get-Command -Name get* -Module vmware*
+Get-Command *snap* -Module vmware*
+
 # First, create a "powered off" snapshot
 $kyrd | New-Snapshot -Name frozen -RunAsync
+
+# Ok, Get-Snapshot is what I want. How do I use it?
+Get-Help Get-Snapshot -Full
+Get-Help Get-Snapshot -Examples
 
 # Bonus: All the commands that support asynchronous (long-running) tasks
 Get-Command -Module vmware* -ParameterName RunAsync
