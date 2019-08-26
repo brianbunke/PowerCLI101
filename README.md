@@ -2,9 +2,7 @@
 
 #### VMware PowerCLI 101 at VMworld US 2019 - HBI1743BU
 
-At VMworld US 2019, [Brian Bunke](https://twitter.com/brianbunke) and [Kyle Ruddy](https://twitter.com/kmruddy) presented a session called "Introduction to PowerCLI." It was intended for those new to PowerShell and/or PowerCLI to watch a live demo and see how it works.
-
-Use this repository as an ongoing reference to the material presented in that session.
+At VMworld US 2019, [Brian Bunke](https://twitter.com/brianbunke) and [Kyle Ruddy](https://twitter.com/kmruddy) presented a session named "Introduction to PowerCLI." It was intended for those new to PowerShell and/or PowerCLI to see it in action -- hopefully making the command line a little more familiar -- and to provide a permanent "how to get started" example via recorded video and this code repository.
 
 ## Demo Files
 
@@ -25,6 +23,7 @@ Use this repository as an ongoing reference to the material presented in that se
   - [Installing PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell)
 - [PowerCLI Blog](https://blogs.vmware.com/PowerCLI/)
   - [Installing PowerCLI](https://blogs.vmware.com/PowerCLI/2017/05/powercli-6-5-1-install-walkthrough.html)
+- [PowerCLI Feature Requests](https://powercli.ideas.aha.io)
 
 ### VMware Hands-on Labs (HOL)
 

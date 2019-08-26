@@ -5,14 +5,15 @@
 Get-Command -Name get* -Module vmware*
 Get-Command *snap* -Module vmware*
 
-# Ok, Get-Snapshot is what I want. How do I use it?
+# Ok, those commands look right. How do I use them?
 Get-Help Get-Snapshot -Full
-Get-Help Get-Snapshot -Examples
+Get-Help New-Snapshot -Examples
 
 # First, create a "powered off" snapshot
-$kyrd | New-Snapshot -Name frozen -RunAsync
+$dev | New-Snapshot -Name important
 
-# Bonus: All the commands that support asynchronous (long-running) tasks
+# Extra credit: You can submit a long-running task and get your console back
+# Here are PowerCLI commands that support asynchronous (long-running) tasks
 Get-Command -Module vmware* -ParameterName RunAsync
 
 # Get info about snapshots
