@@ -2,7 +2,7 @@
 
 # Creating a new tag category, and a new tag inside it
 New-TagCategory -Name dev -Cardinality Single -EntityType VirtualMachine
-New-Tag -Category prod -Name dev
+New-Tag -Category dev -Name prod
 Get-Tag -Name prod
 
 # Assign the new tag to all of Kyle's VMs
