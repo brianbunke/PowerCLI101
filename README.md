@@ -6,7 +6,7 @@ At VMworld US 2019, [Brian Bunke](https://twitter.com/brianbunke) and [Kyle Rudd
 
 ## Demo Files
 
-- [0 - Setup.ps1](0 - Setup.ps1)
+- [0 - Setup.ps1](0%20-%20Setup.ps1)
   - Get/update PowerCLI, connect to vCenter, perform optional one-time setup tasks
 - `1 - Intro.ps1`
 - `2 - VM snapshots.ps1`
