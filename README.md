@@ -1,18 +1,28 @@
 # PowerCLI 101
 
-#### VMware PowerCLI 101 at VMworld US 2019 - HBI1743BU
+### Blog post: [VMware PowerCLI 101](https://brianbunke.com/blog/2019/09/03/powercli-101)
 
-At VMworld US 2019, [Brian Bunke](https://twitter.com/brianbunke) and [Kyle Ruddy](https://twitter.com/kmruddy) presented a session named "Introduction to PowerCLI." It was intended for those new to PowerShell and/or PowerCLI to see it in action -- hopefully making the command line a little more familiar -- and to provide a permanent "how to get started" example via recorded video and this code repository.
+At VMworld US 2019, [Brian Bunke](https://twitter.com/brianbunke) and [Kyle Ruddy](https://twitter.com/kmruddy) presented session HBI1743BU - "Introduction to PowerCLI." It was intended for those new to PowerShell and/or PowerCLI to see it in action -- hopefully making the command line a little more familiar -- and to provide a permanent "how to get started" example via recorded video and this code repository.
 
 ## Demo Files
 
-- [0 - Setup.ps1](0%20-%20Setup.ps1)
-  - Get/update PowerCLI, connect to vCenter, perform optional one-time setup tasks
-- `1 - Intro.ps1`
-- `2 - VM snapshots.ps1`
-- `3 - VM tags.ps1`
-- `4 - VM creation date.ps1`
-- `5 - Extras.ps1`
+- [`0 - Setup.ps1`](0%20-%20Setup.ps1)
+  - Get/update PowerCLI; connect to vCenter; perform optional one-time setup tasks
+- [`1 - Intro.ps1`](1%20-%20Intro.ps1)
+  - Discover infrastructure; use the pipeline and a variable; display other object properties
+- [`2 - VM snapshots.ps1`](2%20-%20VM%20snapshots.ps1)
+  - Discoverability in PowerShell; find and remove old VM snapshots
+- [`3 - VM tags.ps1`](3%20-%20VM%20tags.ps1)
+  - Tag lifecycle: create, read, update, delete ("CRUD" operations)
+- [`4 - VM creation date.ps1`](4%20-%20VM%20creation%20date.ps1)
+  - Explore the `ExtensionData` property to view a new vSphere 6.7 feature
+- [`5 - Extras.ps1`](5%20-%20Extras.ps1)
+  - Some code examples of ideas we introduced but didn't have time to cover during the session:
+    - Get VM by MAC address
+    - Find VMs with drive media mounted
+    - Data manipulation and reporting
+    - Compare host DNS/NTP entries
+    - Check the "Upgrade Tools on reboot" box on all VMs
 
 ---
 
