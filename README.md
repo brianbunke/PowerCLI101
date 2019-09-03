@@ -1,6 +1,4 @@
-# PowerCLI 101
-
-### Blog post: [VMware PowerCLI 101](https://brianbunke.com/blog/2019/09/03/powercli-101)
+# Blog post: [VMware PowerCLI 101](https://brianbunke.com/blog/2019/09/03/powercli-101)
 
 At VMworld US 2019, [Brian Bunke](https://twitter.com/brianbunke) and [Kyle Ruddy](https://twitter.com/kmruddy) presented session HBI1743BU - "Introduction to PowerCLI." It was intended for those new to PowerShell and/or PowerCLI to see it in action -- hopefully making the command line a little more familiar -- and to provide a permanent "how to get started" example via recorded video and this code repository.
 
@@ -19,10 +17,10 @@ At VMworld US 2019, [Brian Bunke](https://twitter.com/brianbunke) and [Kyle Rudd
 - [`5 - Extras.ps1`](5%20-%20Extras.ps1)
   - Some code examples of ideas we introduced but didn't have time to cover during the session:
     - Get VM by MAC address
-    - Find VMs with drive media mounted
+    - Find VMs with connected media drives
     - Data manipulation and reporting
     - Compare host DNS/NTP entries
-    - Check the "Upgrade Tools on reboot" box on all VMs
+    - Check the "Upgrade VMware Tools before each power on" box on all VMs
 
 ---
 
@@ -30,7 +28,7 @@ At VMworld US 2019, [Brian Bunke](https://twitter.com/brianbunke) and [Kyle Rudd
 
 ### Basic PowerShell and PowerCLI Info
 
-- [PowerShell Overview](https://docs.microsoft.com/en-us/powershell/scripting/overview) [docs.microsoft.com]
+- [PowerShell Overview](https://docs.microsoft.com/en-us/powershell/scripting/overview)
   - [Installing PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell)
 - [PowerCLI Blog](https://blogs.vmware.com/PowerCLI/)
   - [Installing PowerCLI](https://blogs.vmware.com/PowerCLI/2017/05/powercli-6-5-1-install-walkthrough.html)
