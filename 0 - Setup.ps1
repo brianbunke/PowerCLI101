@@ -12,7 +12,10 @@ Connect-VIServer -Server vcenter.contoso.test
 
 # Did you see an error about an invalid vCenter certificate?
 Get-PowerCLIConfiguration
-Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -ParticipateInCeip $true
+Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -DefaultVIServerMode Multiple -ParticipateInCeip $true
+    # Ignore invalid certificates
+    # Allow connecting to multiple servers at the same time ("Single" would prevent simultaneous connections)
+    # CEIP sends anonymized usage data to the PowerCLI team ($false would opt out)
 
 # "Automatic variables" specific to PowerCLI
 # List all vCenter servers I'm currently connected to
